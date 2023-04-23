@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <title>Playstation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="barranav">
+
+            <img class="logo" src="img/logo.png">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link"> Accessories</a></li class="nav-li">
+                    <li class="nav-li"><a class="nav-link">Control </a></li>
+                    <li class="nav-li"><a class="nav-link"> Others </a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" alt="" class="menu-nav" onclick="showMenu()">
+        </div>
+        <div class="ps">
+            <div class="ps-2">
+                <h2>PS DualShock</h2>
+                <h3>Wireless controller dor Playstation</h3>
+                <p>Controle original</p>
+                <h4>R$318,99</h4>
+                <button class="button-1">Buy now <img src="img/arrow.png" alt=""></button>
+
+            </div>
+
+
+
+            <div class="ps-3">
+
+                <img class="img-control" src="img/controller.png" alt="control">
+                <div class="color"></div>
+            </div>
+            <button class="botao-add">
+                <img src="img/add.png" alt="botao-adicionar">
+            </button>
+
+
+        </div>
+
+        <footer class="contato">
+            <img src="img/fb.png" alt="face">
+            <img src="img/tw.png" alt="twiter">
+            <img src="img/ig.png" alt="intagram">
+        </footer>
+
+
+
+
+
+    </div>
+
+</body>
+<script>
+    const menuList = document.getElementById("menu-list")
+    console.log(menuList)
+    menuList.style.maxHeight = "0px"
+
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "200px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+
+
+
+
+</script>
+
+</html>
